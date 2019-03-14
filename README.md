@@ -1,7 +1,9 @@
 # Framework-Project
 Eclipse Spark Project
 
-Initial Rough Draft for Spark/Eclipse(Maven?) 
+Initial Rough Draft: This will create a local development environment. Spark is designed though as a cluster computation environment designed to run across multiple systems. In this case the local system will be the Master Node.
+
+Platform used will be Apple OSX with the Eclipse Java IDE (incl. Maven), Spark Framework
 
 Download/Install Apache Spark Instructions
 
