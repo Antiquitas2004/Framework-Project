@@ -97,7 +97,7 @@ public class CharacterCreator
 
 	        character.characterClass = characterClass;
 
-	        System.out.println(""); // print empty line
+	        System.out.println(""); /// print empty line
 	    }
 		
 		// Character Ability Scores. Abilities will be modified by Race and Class choices.
