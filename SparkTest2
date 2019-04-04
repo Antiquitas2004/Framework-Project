@@ -1,1 +1,36 @@
-This test with Spark will access and assess weather data for a particular location in Pennsylvania called Eagles Mere.
+This test with Spark will access and assess weather data for a particular location in Pennsylvania called Eagles Mere.(May tie into Yahoo weather API https://www.programmableweb.com/api/yahoo-weather)
+
+
+package weather.spark;
+
+import static org.apache.spark.sql.functions.concat;
+import static org.apache.spark.sql.functions.lit;
+
+import java.util.Properties;
+
+import org.apache.spark.sql.Dataset;
+import org.apache.spark.sql.Row;
+import org.apache.spark.sql.SaveMode;
+import org.apache.spark.sql.SparkSession;
+
+public class Application 
+{	
+	public static void main(String args[]) throws InterruptedException 
+	{
+		SparkSession spark = new SparkSession.Builder()
+				.appName("CSV to DB")
+				.master("local") 
+				.getOrCreate();
+
+		Dataset<Row> df = spark.read().format("csv")
+			.option("header", true)
+			.load("src/main/resources/stormevents_details-ftp_v1.0_d2010_c20170726.csv"); 
+
+		df = df.withColumn("Snow Fall Prediction", 
+				
+		
+	    df.write()
+	    	.mode(SaveMode.Overwrite)
+	    	.jdbc(dbConnectionUrl, "project1", prop);
+	}
+}
