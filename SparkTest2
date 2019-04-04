@@ -1,4 +1,9 @@
-This test with Spark will access and assess weather data for a particular location in Pennsylvania called Eagles Mere.(May tie into Yahoo weather API https://www.programmableweb.com/api/yahoo-weather)
+This test with Spark will access and assess weather data for a particular location in Pennsylvania called Eagles Mere.
+
+(May tie into Yahoo weather API https://www.programmableweb.com/api/yahoo-weather.)
+(Also Ref: https://www.youtube.com/watch?v=og5h5ppwXgU, https://www.youtube.com/watch?v=pFf5HdlYFq4)
+(Storm Data https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+(Installation ideas https://medium.freecodecamp.org/installing-scala-and-apache-spark-on-mac-os-837ae57d283f)
 
 
 package weather.spark;
