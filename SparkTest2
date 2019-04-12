@@ -5,6 +5,10 @@ This test with Spark will access and assess weather data for a particular locati
 (Storm Data https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
 (Installation ideas https://medium.freecodecamp.org/installing-scala-and-apache-spark-on-mac-os-837ae57d283f)
 
+// variables for future forecast days
+    private double tempD1, tempD2, tempD3, tempD4;
+    private String iconD1, iconD2, iconD3, iconD4;
+
 
 package weather.spark;
 
