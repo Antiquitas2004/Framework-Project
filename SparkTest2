@@ -12,6 +12,21 @@ This test with Spark will access and assess weather data for a particular locati
 
 package weather.spark;
 
+import org.apache.spark.api.java.*;
+import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.function.Function;
+
+import org.apache.spark.mllib.regression.LabeledPoint;
+import org.apache.spark.mllib.linalg.Vectors;
+import org.apache.spark.mllib.regression.LinearRegressionModel;
+import org.apache.spark.mllib.regression.LinearRegressionWithSGD;
+import scala.Tuple2;
+import java.io.*;
+import org.apache.spark.mllib.regression.LassoModel;
+import org.apache.spark.mllib.regression.LassoWithSGD;
+import org.apache.spark.mllib.regression.RidgeRegressionModel;
+import org.apache.spark.mllib.regression.RidgeRegressionWithSGD;
+
 import static org.apache.spark.sql.functions.concat;
 import static org.apache.spark.sql.functions.lit;
 
@@ -21,6 +36,8 @@ import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SaveMode;
 import org.apache.spark.sql.SparkSession;
+	
+
 
 public class Application 
 {	
