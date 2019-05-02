@@ -58,3 +58,4 @@ Create a Maven Project (control click on left pane in Eclipse and select New/Oth
 
 The next part can be a bit compicated as it involves linking to Spark and creating settings. Open the pom.xml file on the left. For this component I relied heavily upon other GitHub creations relying upon Spark. All Spark elements wil fall under "dependencies" after the project identifier fields and "properties" which will include the Java version, Scala, Spark and Maven information. Once all information has been edited save the pom.xml and refresh (F5 or control clcik and refresh) the side menu which should now present "Dependencies"
 
+Additional: import jar files to be used directly into library and add via properties in Eclipse.
